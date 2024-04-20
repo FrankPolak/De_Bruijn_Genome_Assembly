@@ -1,7 +1,7 @@
 # De_Bruijn_Genome_Assembly
 This project aims to assemble a genome form short reads based on the de Bruijn graph method. This script was submitted for the Introduction to Perl course assessment as part of the MSc Bioinformatics for Health Sciences programme at Pompeu Fabra University, Barcelona.
 
-<ins>**Grade obtained: 9.75/10**</ins>
+**Grade obtained: 9.75/10**
 
 ## Introduction
 The PERL programme submitted aims to assemble a genome from a set of read sequences provided in FASTQ format. The programme achieves this by utilising the De Bruijn Graph method, which generates a graph of k-mers of a certain size, which overlap to produce an edge. A De Bruijn graph specifically requires that all edges be visited exactly once, or in the case of repeats, the corresponding number of times. This method is hence superior to other genome assembly algorithms as it allows for regions of repeats to be represented in the final result. The necessary input from the user thus comprises a FASTQ file with short reads to be assembled, and a desired k-mer size, the latter of which may have to be adjusted to produce more accurate results.
